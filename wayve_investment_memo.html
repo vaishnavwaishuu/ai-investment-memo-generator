@@ -1,0 +1,180 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:#020817;color:#e2e8f0;}
+.mono{font-family:'DM Mono',monospace;}
+.serif{font-family:'Playfair Display',serif;}
+.wrap{background:#020817;padding:0 0 40px;}
+.topbar{border-bottom:1px solid #1e293b;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo-icon{width:32px;height:32px;border-radius:7px;background:#8b6914;display:flex;align-items:center;justify-content:center;color:#fef3c7;font-size:15px;}
+.logo-name{font-size:14px;font-weight:600;color:#f1f5f9;}
+.logo-sub{font-size:10px;color:#475569;letter-spacing:.07em;}
+.powered{font-size:10px;color:#475569;background:#0f172a;border:1px solid #1e293b;padding:3px 10px;border-radius:20px;}
+.inner{max-width:720px;margin:0 auto;padding:0 20px;}
+.memo-card{background:#0f172a;border:1px solid #1e293b;border-radius:14px;overflow:hidden;margin-top:28px;}
+.memo-hero{padding:24px 24px 18px;border-bottom:1px solid #1e293b;}
+.memo-tag{font-size:10px;color:#c8a96e;letter-spacing:.1em;margin-bottom:10px;}
+.memo-title{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:#f8fafc;line-height:1.2;margin-bottom:6px;}
+.memo-tagline{font-size:13px;color:#64748b;margin-bottom:14px;line-height:1.6;}
+.memo-note{font-size:12px;color:#475569;font-style:italic;line-height:1.6;}
+.rating-box{background:#1a2d1a;border:2px solid #34d399;border-radius:10px;padding:12px 18px;text-align:center;min-width:90px;}
+.rating-label{font-size:9px;color:#64748b;letter-spacing:.08em;margin-bottom:3px;}
+.rating-val{font-size:14px;font-weight:700;color:#34d399;font-family:'DM Mono',monospace;}
+.hero-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #1e293b;}
+.stat{padding:12px 18px;border-right:1px solid #1e293b;}
+.stat:last-child{border-right:none;}
+.stat-label{font-size:9px;color:#475569;letter-spacing:.07em;margin-bottom:3px;}
+.stat-val{font-size:13px;font-weight:600;color:#e2e8f0;}
+.scorecard{padding:18px 24px;border-bottom:1px solid #1e293b;}
+.sc-title{font-size:10px;color:#475569;letter-spacing:.08em;margin-bottom:14px;}
+.bar-row{margin-bottom:10px;}
+.bar-meta{display:flex;justify-content:space-between;margin-bottom:4px;}
+.bar-label{font-size:11px;color:#94a3b8;font-family:'DM Mono',monospace;}
+.bar-score{font-size:11px;font-weight:600;font-family:'DM Mono',monospace;}
+.bar-track{height:4px;background:#1e293b;border-radius:2px;}
+.bar-fill{height:100%;border-radius:2px;}
+.sections{padding:4px 24px 8px;}
+.sec{border-bottom:1px solid #1e293b;padding:14px 0;}
+.sec:last-child{border-bottom:none;}
+.sec-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.sec-num{width:22px;height:22px;border-radius:50%;background:#0f172a;border:1px solid #334155;display:flex;align-items:center;justify-content:center;font-size:9px;color:#c8a96e;font-family:'DM Mono',monospace;flex-shrink:0;}
+.sec-title{font-size:11px;font-weight:600;color:#e2e8f0;letter-spacing:.05em;text-transform:uppercase;}
+.sec-body{font-size:13px;color:#94a3b8;line-height:1.8;padding-left:32px;}
+.footer{margin-top:16px;background:#0f172a;border:1px solid #1e293b;border-radius:10px;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;}
+.footer-note{font-size:11px;color:#334155;font-family:'DM Mono',monospace;}
+.footer-badge{font-size:10px;color:#c8a96e;background:#c8a96e15;border:1px solid #c8a96e30;padding:3px 10px;border-radius:20px;}
+.sc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;}
+</style>
+
+<div class="wrap">
+<div class="topbar">
+  <div class="logo">
+    <div class="logo-icon">◈</div>
+    <div>
+      <div class="logo-name">MemoForge</div>
+      <div class="logo-sub mono">AI INVESTMENT MEMO GENERATOR</div>
+    </div>
+  </div>
+  <div class="powered mono">POWERED BY CLAUDE</div>
+</div>
+
+<div class="inner">
+<div class="memo-card">
+
+  <div class="memo-hero">
+    <div class="hero-row">
+      <div style="flex:1;">
+        <div class="memo-tag mono">INVESTMENT MEMO · JUNE 2026</div>
+        <h1 class="memo-title">Wayve</h1>
+        <p class="memo-tagline">Building the AI brain for autonomous vehicles — software-first, hardware-agnostic, globally scalable.</p>
+        <p class="memo-note">Memo prepared for internal review. Wayve represents a rare convergence of foundation model AI and real-world robotics at a pivotal moment in the AV market transition.</p>
+      </div>
+      <div class="rating-box">
+        <div class="rating-label mono">RATING</div>
+        <div class="rating-val">Strong Buy</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat"><div class="stat-label mono">MARKET SIZE</div><div class="stat-val">$2.3 Trillion</div></div>
+    <div class="stat"><div class="stat-label mono">STAGE</div><div class="stat-val">Series C+</div></div>
+    <div class="stat"><div class="stat-label mono">FOUNDED</div><div class="stat-val">2017, Cambridge UK</div></div>
+    <div class="stat"><div class="stat-label mono">SECTOR</div><div class="stat-val">AV / AI / DeepTech</div></div>
+  </div>
+
+  <div class="scorecard">
+    <div class="sc-title mono">ANALYST SCORECARD</div>
+    <div class="sc-grid">
+      <div>
+        <div class="bar-row">
+          <div class="bar-meta"><span class="bar-label">Market Opportunity</span><span class="bar-score" style="color:#c8a96e;">9/10</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:90%;background:#c8a96e;"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-meta"><span class="bar-label">Team Quality</span><span class="bar-score" style="color:#60a5fa;">9/10</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:90%;background:#60a5fa;"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-meta"><span class="bar-label">Product &amp; Tech</span><span class="bar-score" style="color:#34d399;">9/10</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:90%;background:#34d399;"></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="bar-row">
+          <div class="bar-meta"><span class="bar-label">Traction &amp; Growth</span><span class="bar-score" style="color:#a78bfa;">7/10</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:#a78bfa;"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-meta"><span class="bar-label">Risk Profile</span><span class="bar-score" style="color:#f87171;">5/10</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%;background:#f87171;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sections">
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">01</div><div class="sec-title">Executive Summary</div></div>
+      <div class="sec-body">Wayve is a Cambridge-based autonomous vehicle AI company building the world's first foundation model for embodied intelligence — LINGO and AV2.0. Having raised over $1.05B including a landmark $1B Series C led by SoftBank, Microsoft, and NVIDIA in 2024, Wayve is positioned as the defining software platform for the global AV transition. We rate this a Strong Buy based on its unique software-first moat, world-class team, and timing in a market inflecting toward scalable AI-driven autonomy.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">02</div><div class="sec-title">Problem &amp; Market Opportunity</div></div>
+      <div class="sec-body">Traditional autonomous vehicle development has been prohibitively expensive — companies like Waymo and Cruise spent $10B+ building hardware-dependent systems that don't generalise across geographies. The core problem is that rule-based AV stacks cannot handle the long tail of real-world driving scenarios. The global autonomous vehicle market is projected at $2.3 trillion by 2035, with the software layer commanding the highest margins. Market timing is exceptional: the maturation of large language models and vision transformers has unlocked a new paradigm where AI can learn to drive from data rather than hand-coded rules — exactly Wayve's approach.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">03</div><div class="sec-title">Product &amp; Solution</div></div>
+      <div class="sec-body">Wayve builds embodied AI — a single neural network end-to-end model that takes sensor input and outputs driving decisions, trained on real-world miles across multiple vehicle types. Their flagship product LINGO-2 is a vision-language-action model that can explain its driving decisions in natural language, a world-first. Unlike Waymo's sensor-heavy stack, Wayve's software runs on standard camera inputs, making it hardware-agnostic and licensable to any OEM. This SaaS-style licensing model creates enormous margin potential and network effects as training data accumulates across fleets globally.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">04</div><div class="sec-title">Business Model &amp; Revenue</div></div>
+      <div class="sec-body">Wayve operates a B2B licensing model — selling its AV software stack to automotive OEMs, fleet operators, and delivery companies rather than operating vehicles itself. Revenue streams include: per-vehicle licensing fees, fleet deployment contracts, and data partnerships. This asset-light model contrasts sharply with robotaxi operators who carry fleet capex. Early commercial partnerships with Asda (grocery delivery) and select European OEMs validate enterprise demand. Unit economics are highly favourable at scale — once the model is trained, marginal cost of deploying to additional vehicles is near-zero.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">05</div><div class="sec-title">Team &amp; Founders</div></div>
+      <div class="sec-body">CEO Amar Shah holds a PhD from Cambridge and previously co-founded a deep learning healthcare company acquired by Google DeepMind. The founding team comprises world-class researchers from DeepMind, Oxford, and Cambridge with deep expertise in reinforcement learning, computer vision, and robotics. The Series C syndicate — SoftBank Vision Fund, Microsoft, and NVIDIA — are not passive investors. Microsoft provides Azure compute at scale; NVIDIA provides DRIVE platform integration; SoftBank provides global OEM relationships in Japan and Southeast Asia. This is a team and cap table that most AV companies cannot replicate.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">06</div><div class="sec-title">Traction &amp; Key Metrics</div></div>
+      <div class="sec-body">Wayve has accumulated millions of real-world driving miles across the UK and US — the primary currency in AV development. Commercial pilots are live with Asda for autonomous grocery delivery in London, representing one of the first commercially deployed AV systems in Europe. The $1.05B raised through 2024 provides a multi-year runway to reach Series D milestones. Key upcoming catalysts: expansion to 3 additional European cities, first OEM licensing deal announcement, and public release of AV2.0 benchmark results. The data flywheel is spinning — more miles mean better models mean more commercial contracts.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">07</div><div class="sec-title">Competitive Landscape</div></div>
+      <div class="sec-body">Primary competitors include Waymo (Alphabet), Cruise (GM), Mobileye (Intel), and Aurora. Wayve's key differentiations: (1) software-only model vs hardware-dependent stacks — 10x lower deployment cost; (2) generalisable foundation model vs geography-specific systems; (3) European regulatory relationships that US competitors lack; (4) open licensing model vs closed robotaxi operations. Tesla FSD is the most philosophically similar approach but Wayve's explicit B2B licensing strategy and OEM partnerships create a non-competing lane. The moat deepens with every mile driven — data advantage is compounding.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">08</div><div class="sec-title">Key Risks &amp; Mitigations</div></div>
+      <div class="sec-body">Risk 1 — Regulatory timeline: AV regulation in Europe and the US remains uncertain. Mitigation: Wayve's commercial deployments are already live under existing frameworks; they are not waiting for full L4 approval. Risk 2 — Capital intensity: foundation model training requires enormous compute. Mitigation: Microsoft Azure partnership provides preferential pricing. Risk 3 — Big Tech competition: Google/Waymo could pursue licensing. Mitigation: Wayve's European footprint and OEM relationships are structurally defensible. Risk 4 — Long commercialisation timeline: full OEM integration takes 5–7 years. Mitigation: near-term delivery fleet contracts provide revenue bridge while long-cycle deals mature.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">09</div><div class="sec-title">Investment Thesis</div></div>
+      <div class="sec-body">Wayve is building the operating system for the autonomous vehicle era — a defensible, compounding software platform at the intersection of the two largest technology transitions of our time: the electrification of transport and the deployment of foundation model AI into the physical world. The $1B Series C at a reported $2.5B valuation looks attractive given the total addressable market of $2.3T and the company's structural advantages in Europe where competitors have minimal presence. The licensing model, if it achieves even 0.5% software attach rate on global new vehicle production by 2032, implies a $15B+ revenue opportunity. The risk-reward at current stage is asymmetric in favour of investors.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-header"><div class="sec-num">10</div><div class="sec-title">Recommended Next Steps</div></div>
+      <div class="sec-body">1. Request a technical deep-dive on AV2.0 model architecture and benchmark comparisons vs Waymo and Tesla FSD. 2. Conduct reference calls with the Asda deployment team to validate commercial performance metrics. 3. Engage NVIDIA and Microsoft investor relations contacts to understand strategic alignment depth. 4. Commission independent legal review of UK and EU AV regulatory roadmap and Wayve's positioning. 5. Model out three scenarios — base (OEM licensing by 2027), bull (2 OEM deals + US expansion by 2026), bear (regulatory delay to 2029) — and establish entry price discipline accordingly.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-note">MEMOFORGE · FOR PORTFOLIO &amp; RESEARCH USE ONLY · JUNE 2026</div>
+  <div class="footer-badge mono">WAYVE · STRONG BUY</div>
+</div>
+
+</div>
+</div>
